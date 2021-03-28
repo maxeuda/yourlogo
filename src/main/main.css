@@ -1,0 +1,44 @@
+/* arrows */
+
+#rightArrow {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#leftArrow, #rightArrow {
+    max-width: 6rem;
+    max-height: 6rem;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(346deg) brightness(109%) contrast(101%);
+}
+
+/* slider styling */
+
+.main_slider {
+    display: flex;
+    flex-direction: row;
+    background-color: #017dc5;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.25rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 30% 15% 0 15%;
+    max-height: 10rem;
+}
+
+.main_slider p {
+    padding: 3rem 6rem;
+    text-align: center;
+}
+
+/* mobile phone and tablet */
+
+@media only screen and (max-width: 768px) {
+    .main_slider {
+        width: 100%;
+        margin: 34% 0 0 0;
+        font-size: 1.75rem;
+        max-height: 20rem;
+    }
+}
